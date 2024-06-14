@@ -37,7 +37,7 @@ class Openspace:
                 occupant = seat.occupant if seat.occupant else "Empty"
                 print(f"  - {occupant}")
 
-    def store(self, filename='e.xlsx'):
+    def store(self, filename='repartition.xlsx'):
         """
         Store the repartition in an Excel file.
         """
@@ -57,7 +57,3 @@ class Openspace:
         workbook.save(filename)
         return f"Repartition saved successfully in {filename}."
 
-a = Openspace(3,3)
-print(a.organize(["A","B","C","D","E","F",'R','Y','O']))
-print(a.display())
-print(a.store())
