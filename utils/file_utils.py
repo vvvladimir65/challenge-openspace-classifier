@@ -1,4 +1,3 @@
-
 import pandas as pd
 
 # Load the Excel file
